@@ -1,0 +1,53 @@
+---
+title: Updating Billy
+description: How to update Billy to the latest version
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Billy uses [GoReleaser](https://goreleaser.com) to publish binaries and automatically update the Homebrew tap and Scoop bucket on every release. Updating is a one-liner.
+
+## Update
+
+<Tabs>
+  <TabItem label="Homebrew">
+  ```bash
+  brew update        # fetch the latest formula from the tap
+  brew upgrade billy # install the new version
+  ```
+  </TabItem>
+
+  <TabItem label="Scoop (Windows)">
+  ```powershell
+  scoop update
+  scoop update billy
+  ```
+  </TabItem>
+
+  <TabItem label="Install script">
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/jd4rider/billy-app/main/scripts/install.sh | bash
+  ```
+  Re-running the install script will overwrite the existing binary with the latest release.
+  </TabItem>
+
+  <TabItem label="Build from source">
+  ```bash
+  cd billy-app
+  git pull origin main
+  go build -o billy ./cmd/billy
+  ```
+  </TabItem>
+</Tabs>
+
+## Check your current version
+
+```bash
+billy --version
+```
+
+This prints the version, commit SHA, build date, and build variant (slim or full).
+
+## What's new?
+
+See the [Devlog](/devlog) for a running changelog of what ships in each release.
