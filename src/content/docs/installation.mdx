@@ -1,0 +1,75 @@
+---
+title: Installation
+description: How to install Billy on macOS, Linux, or Windows
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Prerequisites
+
+Billy needs [Ollama](https://ollama.com) to talk to AI models.
+
+- **Billy Slim** — install Ollama separately  
+- **Billy Full** — Ollama is bundled, auto-starts on first run
+
+:::note[Pre-Alpha Software]
+Billy is in pre-alpha. Expect rough edges and breaking changes between versions.
+:::
+
+## Quick Install
+
+<Tabs>
+  <TabItem label="Slim (macOS/Linux)">
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/jd4rider/billy-app/main/scripts/install.sh | bash
+  ```
+  Then install Ollama separately at [ollama.com](https://ollama.com).
+  </TabItem>
+
+  <TabItem label="Full (bundled Ollama)">
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/jd4rider/billy-app/main/scripts/install.sh | bash -s -- --full
+  ```
+  Ollama is included and starts automatically.
+  </TabItem>
+
+  <TabItem label="Homebrew">
+  ```bash
+  brew tap jd4rider/billy
+  brew install billy
+  ```
+  </TabItem>
+
+  <TabItem label="Windows (Scoop)">
+  ```powershell
+  scoop bucket add billy https://github.com/jd4rider/scoop-billy
+  scoop install billy
+  ```
+  </TabItem>
+
+  <TabItem label="Build from source">
+  ```bash
+  git clone https://github.com/jd4rider/billy-app.git
+  cd billy-app
+  go build -o billy ./cmd/billy
+  ./billy
+  ```
+  Requires Go 1.24+.
+  </TabItem>
+</Tabs>
+
+## Verify installation
+
+```bash
+billy --version
+```
+
+## Pull your first model
+
+```bash
+ollama pull mistral    # great all-rounder, ~4GB
+# or
+ollama pull llama3.2  # fast 3B model, ~2GB
+```
+
+Then run `billy` and start chatting.
