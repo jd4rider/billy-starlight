@@ -18,11 +18,13 @@ Billy runs on [Ollama](https://ollama.com), a free local LLM server, and works o
 ## What can Billy do?
 
 - 💬 **Chat** with any Ollama model from your terminal
+- 🤖 **Agentic mode** — Billy can propose and run shell commands, read the output, and self-debug until it works
 - 🧠 **Remember things** about you across sessions
 - 📜 **Resume conversations** — full session history
 - 🔄 **Switch models** on the fly with `/model`
 - 📦 **Download models** without leaving the app with `/pull`
 - ⌨️  **Command picker** — type `/` to see all commands
+- 📊 **Progress bars** and collapsible command output for a clean terminal experience
 
 ## Built with
 

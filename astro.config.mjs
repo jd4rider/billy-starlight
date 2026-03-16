@@ -34,6 +34,7 @@ export default defineConfig({
           items: [
             { label: 'FAQ', slug: 'faq' },
             { label: 'Roadmap', slug: 'roadmap' },
+            { label: 'Devlog', slug: 'devlog' },
           ],
         },
       ],
