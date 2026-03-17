@@ -42,7 +42,7 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css'],
       head: [
         // Search Console verification — replace content value once you create the property
-        { tag: 'meta', attrs: { name: 'google-site-verification', content: 'PASTE_BILLY_STARLIGHT_VERIFICATION_CODE_HERE' } },
+        { tag: 'meta', attrs: { name: 'google-site-verification', content: 'KwTFLDsjKtARSz9OGv4cJjnPjDU20Z_02vCWbWvlCV0' } },
       ],
       components: {
         Footer: './src/components/Footer.astro',
