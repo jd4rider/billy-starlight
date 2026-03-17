@@ -1,0 +1,29 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<div class="support-footer">
+  If Billy helps your workflow →
+  <a href="https://buymeacoffee.com/jd4rider" target="_blank" rel="noreferrer">☕ Buy me a coffee</a>
+  ·
+  <a href="https://github.com/sponsors/jd4rider" target="_blank" rel="noreferrer">❤️ GitHub Sponsors</a>
+</div>
+
+<style>
+.support-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--sl-color-gray-2);
+  padding: 0.75rem 1rem 1.5rem;
+  opacity: 0.7;
+}
+.support-footer a {
+  color: var(--sl-color-gray-2);
+  text-decoration: none;
+}
+.support-footer a:hover {
+  color: var(--sl-color-white);
+}
+</style>
