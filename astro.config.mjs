@@ -43,6 +43,9 @@ export default defineConfig({
       head: [
         // Search Console verification — replace content value once you create the property
         { tag: 'meta', attrs: { name: 'google-site-verification', content: 'KwTFLDsjKtARSz9OGv4cJjnPjDU20Z_02vCWbWvlCV0' } },
+        // Google Analytics
+        { tag: 'script', attrs: { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-S4J9M0HDWG' } },
+        { tag: 'script', content: "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S4J9M0HDWG');" },
       ],
       components: {
         Footer: './src/components/Footer.astro',
