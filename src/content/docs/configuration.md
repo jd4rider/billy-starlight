@@ -13,7 +13,7 @@ type = "ollama"
 url  = "http://localhost:11434"
 
 [ollama]
-model       = "mistral"
+model       = "qwen2.5-coder:7b"
 temperature = 0.7
 
 [storage]
@@ -33,7 +33,7 @@ history_file = "~/.localai/history.db"
 
 | Key | Default | Description |
 |---|---|---|
-| `model` | `mistral` | Default model to use |
+| `model` | `qwen2.5-coder:7b` | Default model to use |
 | `temperature` | `0.7` | Sampling temperature (0.0 = deterministic, 1.0 = creative) |
 
 ### `[storage]`
