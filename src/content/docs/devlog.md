@@ -7,6 +7,56 @@ A running changelog of meaningful updates — written as we ship.
 
 ---
 
+## 2026-03-17 — Streaming responses, permission persistence & smart iteration (v0.1.5-alpha)
+
+### Streaming responses (see Billy think)
+
+Billy's responses now stream word-by-word as Ollama generates them. You see
+the reasoning unfold in real-time instead of staring at a spinner until the
+full answer drops. This makes long agent responses feel much more interactive —
+especially when Billy is working through an error and explaining what it found.
+
+### Permission picker — fixed & improved
+
+The permission picker had a silent bug: the selection index was reset to `0`
+*before* the switch evaluated it, so "Always this session" and "Cancel" were
+unreachable — every pick silently ran "Run once" no matter what you chose.
+
+Fixed. The picker now has four options:
+
+```
+⚡ go build .
+
+▶  Run once
+   Allow 'go' this session
+   ✅ Allow ALL commands this session
+   🚫 Cancel
+```
+
+- **Allow 'go' this session** — approves that command type (prefix) for the rest
+  of the session; you won't be asked again for `go …` commands.
+- **✅ Allow ALL commands this session** — Billy runs everything without asking.
+  Pick this once at the start of a task and stay out of the loop.
+
+### Smart iteration memory
+
+Billy now tracks every command that fails during an agent chain. Before each
+feedback cycle, it receives a structured log:
+
+```
+=== FAILED COMMANDS THIS SESSION (do NOT retry any of these) ===
+[1] $ go build .
+[exit exit status 1]
+./main.go:5:2: undefined: fmt
+=== You MUST try a different approach for any repeated failures above. ===
+```
+
+If the AI still proposes the exact same failing command, it's automatically
+skipped and Billy is told to find a different approach. No more infinite loops
+on the same broken command.
+
+---
+
 ## 2026-03-17 — Agentic mode overhaul: async execution, directory tracking & visual feedback (v0.1.4-alpha)
 
 A major overhaul to make Billy a genuinely capable coding agent — not just a
