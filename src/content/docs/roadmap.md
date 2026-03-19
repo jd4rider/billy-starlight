@@ -5,7 +5,7 @@ description: What's coming to Billy.sh
 
 ## Status
 
-Billy is in **pre-alpha**. The core is working; we're expanding features and stabilising.
+Billy is in **alpha**. The core is working; we're expanding features and stabilising.
 
 ## ✅ Done
 
@@ -27,14 +27,18 @@ Billy is in **pre-alpha**. The core is working; we're expanding features and sta
 - [x] Mouse support (click to expand collapsed output)
 - [x] Consistent `You >` / `Billy >` / `Command >` label alignment
 
+- [x] Context compaction (`/compact`)
+- [x] Session checkpoints (`/session`)
+- [x] Groq / custom OpenAI-compatible backend
+- [x] License system — Free / Pro / Premium / Team / Enterprise (LemonSqueezy)
+- [x] Teaching mode (`/mode teach`) — Socratic AI, admin PIN controls
+- [x] `/suggest`, `/explain`, `/cd`, `/ls`, `/git`, `/pwd` shell tools
+
 ## 🔜 Coming soon
 
-- [ ] Context compaction (`/compact`)
-- [ ] Session checkpoints (`/session`)
 - [ ] Integration tests
-- [ ] Groq backend
-- [ ] Custom HTTP backend
-- [ ] Billy.sh cloud SaaS backend
+- [ ] Billy.sh cloud SaaS backend (Billy relay)
+- [ ] Voice mode (Whisper + Piper TTS)
 
 ## 🗓 Planned
 

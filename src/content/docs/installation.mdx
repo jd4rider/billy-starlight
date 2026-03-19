@@ -12,8 +12,8 @@ Billy needs [Ollama](https://ollama.com) to talk to AI models.
 - **Billy Slim** — install Ollama separately  
 - **Billy Full** — Ollama is bundled, auto-starts on first run
 
-:::note[Pre-Alpha Software]
-Billy is in pre-alpha. Expect rough edges and breaking changes between versions.
+:::note[Alpha Software]
+Billy is in alpha. Expect rough edges and breaking changes between versions.
 :::
 
 ## Quick Install
@@ -35,7 +35,8 @@ Billy is in pre-alpha. Expect rough edges and breaking changes between versions.
 
   <TabItem label="Homebrew">
   ```bash
-  brew install jd4rider/billy/billy
+  brew tap jd4rider/billy
+  brew install billy
   ```
   </TabItem>
 
@@ -66,7 +67,7 @@ billy --version
 ## Pull your first model
 
 ```bash
-ollama pull qwen2.5-coder:14b  # Billy's default, great for coding, ~4GB
+ollama pull mistral    # great all-rounder, ~4GB
 # or
 ollama pull llama3.2  # fast 3B model, ~2GB
 ```

@@ -12,7 +12,7 @@ description: Frequently asked questions about Billy.sh
 For coding tasks:
 - `codellama` — Meta's code-focused model
 - `deepseek-coder` — Excellent for code completion
-- `qwen2.5-coder:14b` — Billy's default; excellent for code, great all-rounder
+- `mistral` — Great all-rounder, good for chat + code
 
 For general chat:
 - `llama3.2` — Fast 3B model, good for most tasks
@@ -34,7 +34,7 @@ Not yet, but Groq and custom HTTP backends are on the roadmap.
 
 ## Is it production ready?
 
-Billy is pre-alpha. It works, but expect rough edges.
+Billy is alpha. It works, but expect rough edges.
 
 ## Where is my data stored?
 
