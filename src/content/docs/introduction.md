@@ -1,11 +1,11 @@
 ---
 title: Introduction
-description: What is Billy.sh and why was it built?
+description: What is Billy and why was it built?
 ---
 
-# Billy.sh
+# Billy
 
-**Billy.sh** is an open-source, terminal-based AI coding assistant that runs entirely on your machine.
+**Billy** is an open-source, terminal-based AI coding assistant that runs entirely on your machine.
 
 No subscription. No API keys. No cloud. Just fast local AI.
 

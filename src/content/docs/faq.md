@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Frequently asked questions about Billy.sh
+description: Frequently asked questions about Billy
 ---
 
 ## Does Billy require internet?
@@ -20,7 +20,7 @@ For general chat:
 
 ## How is this different from GitHub Copilot?
 
-| | Billy.sh | GitHub Copilot |
+| | Billy | GitHub Copilot |
 |---|---|---|
 | Cost | Free (open source) or one-time fee | $10/month |
 | Data | Stays on your machine | Sent to GitHub/OpenAI |
@@ -34,7 +34,7 @@ Not yet, but Groq and custom HTTP backends are on the roadmap.
 
 ## Is it production ready?
 
-Billy is alpha. It works, but expect rough edges.
+Billy is early, already useful, and still getting polished.
 
 ## Where is my data stored?
 

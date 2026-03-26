@@ -21,7 +21,7 @@ Billy scans your messages for trigger phrases and automatically saves relevant i
 
 ```
 > Remember that I'm a senior Go developer
-> Save that I'm building a SaaS product called Billy.sh
+> Save that I'm building a SaaS product called Billy
 > Keep in mind I prefer concise, direct code examples
 ```
 

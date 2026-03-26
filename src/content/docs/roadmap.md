@@ -1,11 +1,11 @@
 ---
 title: Roadmap
-description: What's coming to Billy.sh
+description: What's coming to Billy
 ---
 
 ## Status
 
-Billy is in **alpha**. The core is working; we're expanding features and stabilising.
+Billy is still early. The core is working; the focus now is polishing the experience and expanding features.
 
 ## ✅ Done
 
@@ -37,7 +37,7 @@ Billy is in **alpha**. The core is working; we're expanding features and stabili
 ## 🔜 Coming soon
 
 - [ ] Integration tests
-- [ ] Billy.sh cloud SaaS backend (Billy relay)
+- [ ] Billy cloud SaaS backend (Billy relay)
 - [ ] Voice mode (Whisper + Piper TTS)
 
 ## 🗓 Planned
