@@ -6,7 +6,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     starlight({
-      title: 'Billy.sh',
+      title: 'Billy',
       description: 'Local AI coding assistant powered by Ollama — no subscription required.',
       logo: {
         src: './src/assets/icon.svg',

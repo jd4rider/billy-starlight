@@ -1,9 +1,26 @@
 ---
 title: Devlog
-description: Running log of what's new in Billy.sh
+description: Running log of what's new in Billy
 ---
 
 A running changelog of meaningful updates — written as we ship.
+
+---
+
+## 2026-03-26 — Custom domains live
+
+Billy now has dedicated public URLs:
+
+- `https://billysh.online` for the main site
+- `https://docs.billysh.online` for the docs
+- `https://blog.billysh.online` for the blog
+
+This gives the product one canonical landing page instead of scattering traffic across `github.io` subpaths.
+
+- Repo homepage links and public site metadata now point at the new domains
+- Blog and docs navigation moved over to their own subdomains
+- In-app upgrade prompts and README links now send users to `billysh.online`
+- GitHub Pages HTTPS provisioning is rolling out host-by-host as the custom domains settle
 
 ---
 

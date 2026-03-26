@@ -1,6 +1,6 @@
 # billy-starlight
 
-Documentation site for [Billy.sh](https://github.com/jd4rider/billy-app), built with [Astro Starlight](https://starlight.astro.build/).
+Documentation site for [Billy](https://github.com/jd4rider/billy-app), built with [Astro Starlight](https://starlight.astro.build/).
 
 Live at: https://docs.billysh.online
 
