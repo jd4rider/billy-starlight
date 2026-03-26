@@ -1,8 +1,10 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   integrations: [
+    sitemap(),
     starlight({
       title: 'Billy.sh',
       description: 'Local AI coding assistant powered by Ollama — no subscription required.',
@@ -52,6 +54,5 @@ export default defineConfig({
       },
     }),
   ],
-  site: 'https://jd4rider.github.io',
-  base: '/billy-starlight',
+  site: 'https://docs.billysh.online',
 });

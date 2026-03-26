@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jd4rider.github.io/billy-starlight/sitemap-index.xml
+Sitemap: https://docs.billysh.online/sitemap-index.xml
