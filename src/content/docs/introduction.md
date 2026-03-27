@@ -13,7 +13,7 @@ No subscription. No API keys. No cloud. Just fast local AI.
 
 Tools like GitHub Copilot are powerful, but cost $10–19/month. If you're a student, indie developer, or just getting started — that adds up.
 
-Billy runs on [Ollama](https://ollama.com), a free local LLM server, and works offline. Pay once (or use the free tier) and it's yours.
+Billy runs on [Ollama](https://ollama.com), a free local LLM server, and works offline. The local app now ships open by default: wire it up yourself for free, or support the project through setup help and sponsorship if you want the convenience.
 
 ## What can Billy do?
 

@@ -22,7 +22,7 @@ For general chat:
 
 | | Billy | GitHub Copilot |
 |---|---|---|
-| Cost | Free (open source) or one-time fee | $10/month |
+| Cost | Open-core app, optional support | $10/month |
 | Data | Stays on your machine | Sent to GitHub/OpenAI |
 | Works offline | ✅ | ❌ |
 | Model choice | Any Ollama model | Fixed models |
@@ -30,7 +30,7 @@ For general chat:
 
 ## Can I use my own server?
 
-Not yet, but Groq and custom HTTP backends are on the roadmap.
+Yes. Billy supports OpenAI-compatible backends, so you can point it at Groq, LM Studio, OpenRouter, or your own compatible server.
 
 ## Is it production ready?
 

@@ -7,6 +7,17 @@ A running changelog of meaningful updates — written as we ship.
 
 ---
 
+## 2026-03-27 — Billy goes open-core
+
+Billy now ships with the full local CLI unlocked by default.
+
+- The core app is no longer positioned as crippleware with a gated “real” version
+- Custom OpenAI-compatible backends are available in the open-core build
+- Support shifts toward setup help, sponsorship, and future convenience bundles
+- The long-term direction is still local-first, private, ad-free software
+
+---
+
 ## 2026-03-26 — Custom domains live
 
 Billy now has dedicated public URLs:
@@ -19,14 +30,14 @@ This gives the product one canonical landing page instead of scattering traffic 
 
 - Repo homepage links and public site metadata now point at the new domains
 - Blog and docs navigation moved over to their own subdomains
-- In-app upgrade prompts and README links now send users to `billysh.online`
+- In-app support and README links now send users to `billysh.online`
 - GitHub Pages HTTPS provisioning is rolling out host-by-host as the custom domains settle
 
 ---
 
 ## 2026-03-18 — Custom endpoints & multi-backend support (v0.1.8-alpha)
 
-Pro+ users can now point Billy at any OpenAI-compatible server — Groq, OpenRouter, LM Studio, or your own.
+Billy can now point at any OpenAI-compatible server — Groq, OpenRouter, LM Studio, or your own.
 
 ### Custom backend configuration
 
@@ -54,29 +65,7 @@ billy
 Type `/backend` to see your active backend, model, and the config file path.
 `/backend reload` hot-reloads your config without restarting Billy.
 
-Ollama is still the default — free tier and local mode work exactly as before.
-Custom endpoints require a Pro or higher license.
-
----
-
-## 2026-03-18 — Licensing polish & UX (v0.1.7-alpha)
-
-- Polished `/activate`, `/deactivate`, and `/license` prompts — clearer status messages
-- One-shot mode now respects tier limits consistently with TUI mode
-- README rewritten — full command reference, config guide, env var overrides, roadmap
-- LemonSqueezy variant ID map updated for both test and live products
-
----
-
-## 2026-03-16 — LemonSqueezy native activation (v0.1.6-alpha)
-
-Replaced custom Ed25519 key crypto with LemonSqueezy's built-in License Keys API.
-
-- Activation calls `POST /v1/licenses/activate` — seat-limited, phone-home on first use
-- `/deactivate` frees your seat so you can move to another machine
-- Upgrading a key (e.g. Pro → Premium) auto-deactivates the old seat first
-- Background re-validation every 7 days keeps licenses current
-- Activation stored encrypted in SQLite — no plaintext keys on disk
+Ollama is still the default, and Billy now treats custom endpoints as part of the open-core tool instead of a gated upgrade.
 
 ---
 

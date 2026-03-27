@@ -16,7 +16,7 @@ Billy is still early. The core is working; the focus now is polishing the experi
 - [x] History session picker
 - [x] Model list, switch & pull
 - [x] Friendly error handling
-- [x] Slim + Full (bundled Ollama) builds
+- [x] Cross-platform installs via script, Homebrew, Scoop, and Linux packages
 - [x] Homebrew tap, Scoop bucket, .deb/.rpm packages
 - [x] Command picker (type `/` for dropdown)
 - [x] Agentic mode — Billy can propose & run shell commands
@@ -30,7 +30,7 @@ Billy is still early. The core is working; the focus now is polishing the experi
 - [x] Context compaction (`/compact`)
 - [x] Session checkpoints (`/session`)
 - [x] Groq / custom OpenAI-compatible backend
-- [x] License system — Free / Pro / Premium / Team / Enterprise (LemonSqueezy)
+- [x] Open-core access model with optional support-first monetization
 - [x] Teaching mode (`/mode teach`) — Socratic AI, admin PIN controls
 - [x] `/suggest`, `/explain`, `/cd`, `/ls`, `/git`, `/pwd` shell tools
 
