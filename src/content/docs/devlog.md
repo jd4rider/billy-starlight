@@ -7,6 +7,24 @@ A running changelog of meaningful updates — written as we ship.
 
 ---
 
+## 2026-03-27 — Desktop bundle pipeline lands
+
+Billy Desktop now has a real release pipeline instead of a half-wired Wails app.
+
+- `wails3 build` and `wails3 package` now work for Billy Desktop
+- The desktop app can ship alongside the `billy` CLI in the same bundle
+- Local bundle artifacts now build cleanly for macOS and Windows
+- Linux desktop builds now have an explicit Docker-based cross-build path instead of a broken fallback
+
+The immediate goal is simple: make the desktop app feel like a real way to install Billy, not a side experiment.
+
+- macOS bundle output now includes both `Billy.app` and `billy`
+- A macOS `.pkg` path is in place for native installs
+- Windows bundle output now includes both `Billy.exe` and `billy.exe`
+- Release helper scripts now stitch `billy-app` and `billy-wails` together in one command
+
+---
+
 ## 2026-03-27 — Billy goes open-core
 
 Billy now ships with the full local CLI unlocked by default.
