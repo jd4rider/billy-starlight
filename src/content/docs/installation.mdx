@@ -9,8 +9,8 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 Billy needs [Ollama](https://ollama.com) to talk to AI models.
 
-- **Billy Slim** — install Ollama separately  
-- **Billy Full** — Ollama is bundled, auto-starts on first run
+- **CLI installs** — install Ollama separately
+- **Billy Desktop** — ships the desktop app and the `billy` CLI together, but Ollama still installs separately
 
 :::note[Fast-moving releases]
 Billy is shipping quickly. Expect occasional rough edges and some breaking changes between versions.
@@ -19,32 +19,38 @@ Billy is shipping quickly. Expect occasional rough edges and some breaking chang
 ## Quick Install
 
 <Tabs>
-  <TabItem label="Slim (macOS/Linux)">
+  <TabItem label="Desktop (macOS/Linux)">
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/jd4rider/billy-wails/main/scripts/install.sh | bash
+  ```
+  Installs Billy Desktop plus the bundled `billy` CLI.
+  </TabItem>
+
+  <TabItem label="CLI (macOS/Linux)">
   ```bash
   curl -fsSL https://raw.githubusercontent.com/jd4rider/billy-app/main/scripts/install.sh | bash
   ```
   Then install Ollama separately at [ollama.com](https://ollama.com).
   </TabItem>
 
-  <TabItem label="Full (bundled Ollama)">
-  ```bash
-  curl -fsSL https://raw.githubusercontent.com/jd4rider/billy-app/main/scripts/install.sh | bash -s -- --full
-  ```
-  Ollama is included and starts automatically.
-  </TabItem>
-
-  <TabItem label="Homebrew">
+  <TabItem label="Homebrew (CLI)">
   ```bash
   brew tap jd4rider/billy
   brew install billy
   ```
   </TabItem>
 
-  <TabItem label="Windows (Scoop)">
+  <TabItem label="Windows (Scoop CLI)">
   ```powershell
   scoop bucket add billy https://github.com/jd4rider/scoop-billy
   scoop install billy
   ```
+  </TabItem>
+
+  <TabItem label="Desktop downloads">
+  - macOS `.pkg` / `.tar.gz`: [Billy Desktop releases](https://github.com/jd4rider/billy-wails/releases)
+  - Windows `.zip`: [Billy Desktop releases](https://github.com/jd4rider/billy-wails/releases)
+  - Linux CLI archives and packages: [Billy CLI releases](https://github.com/jd4rider/billy-app/releases)
   </TabItem>
 
   <TabItem label="Build from source">
